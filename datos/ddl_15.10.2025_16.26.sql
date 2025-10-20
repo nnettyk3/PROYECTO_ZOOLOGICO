@@ -34,7 +34,7 @@ INSERT INTO entrada (fecha_visita, precio, id_visitante) VALUES
 ('04-10-2025', 5500, 4),
 ('05-10-2025', 7000, 5),
 ('06-10-2025', 4800, 6),
-)
+('07-10-2025', 5000, 7);
 
 
 
