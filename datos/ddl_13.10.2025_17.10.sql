@@ -1,13 +1,20 @@
 
 
-
-CREATE TABLE IF NOT EXISTS animal_cuidador (
-    id_animal INT NOT NULL,
-    id_cuidador INT NOT NULL,
-    PRIMARY KEY (id_animal, id_cuidador),
-    FOREIGN KEY (id_animal) REFERENCES animal(id_animal),
-    FOREIGN KEY (id_cuidador) REFERENCES cuidadores(id_cuidador)
+CREATE TABLE IF NOT EXISTS animal (
+    id_animal INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(100) NOT NULL,
+    especie VARCHAR(100) NOT NULL,
+    edad INT,
+    habitat VARCHAR(100)
 );
+
+CREATE TABLE IF NOT EXISTS cuidadores (
+    id_cuidador INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(100) NOT NULL,
+    turno VARCHAR(50),
+    especialidad VARCHAR(100)
+);
+
 
 CREATE TABLE IF NOT EXISTS visitantes (
     id_visitante INT PRIMARY KEY AUTO_INCREMENT,
