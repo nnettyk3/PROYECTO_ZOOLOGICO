@@ -44,11 +44,15 @@ INSERT INTO visitantes (nombre, rut) VALUES
 
 INSERT INTO cuidados_medicos (id_animal, fecha, tipo_cuidado, descripcion, veterinario, observaciones) VALUES
 (1, '15-10-2025', 'Revision Gneneral', 'Chequeo de rutina, peso y estado general', 'Dr. carlos Mendez', 'Animal en buen estado de salud'),
-(2, '16-10-2025')
-
-
-
-
+(2, '16-10-2025', 'vacunacion', 'Aplicacion de vacuna antirrabica', 'Dra. Lucia Fernandez', 'Sin reacciones adversas'),
+(3, '17-10-2025', 'Tratamiento Dental', 'Limpieza denntal', 'Dr','Miguel Torres', 'Mejora en la salud bucal'),
+(4, '18-10-2025', 'Revision de Piel', 'Evaluacion de Lesiones cutaneas', 'Dra. Ana Ruiz', 'No se encontraron problemas'),
+(5, '19-10-2025', 'Cirugia Menor', 'Extraccion de tumot benigmo', 'Dr. Sofia Lopez', 'Recuperacion satisfactoria'),
+(1, '20-10-2025', 'Revision General', 'Chequeo de rutina', 'Dr. Carlos Mendez', 'Animal en buen estado de salud'),
+(2, '21-10-2025', 'Vacunacion', 'Aplicacion de vacuna contra la gripe felina', 'Dra. Lucia Fernandez', 'Sin reacciones adversas'),
+(3, '22-10-2025', 'Tratamiento Dental', 'Revision y Limpieza dental', 'Dr. Miguel Torres', 'Mejora en la salud bucal'),
+(4, '23-10-2025', 'Revision de piel', 'Evaliacion de Lesiones cutaneas', 'Dra. Ana Ruiz', 'No se encontraron problemas'),
+(5, '24-10-2025', 'cirugia menor', 'Extraccion de tumot benigno', 'Dr. sofia Lopez', 'Recuperacion satisfactoria');
 
 
 INSERT INTO alimentacion (id_animal, tipo_comida, cantidad, horario)
