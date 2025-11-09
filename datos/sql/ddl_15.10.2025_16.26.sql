@@ -17,10 +17,10 @@ INSERT INTO cuidadores (nombre, turno, especialidad) VALUES
 ('Juan Torres', 'Mañana', 'Mamiferos Grandes'),
 ('Ana Gomez', 'Tarde', 'Aves Exoticas'),
 ('Luis Ruiz', 'Mañana', 'Reptiles'),
-('Katherine Lee', 'Tarde', 'Animales', 'Acuaticos'),
+('Katherine Lee', 'Tarde', 'Animales Acuaticos'),
 ('Calos Perez', 'Mañana', 'Mamiferos Pequeños'),
 ('Karla suazo', 'Tarde', 'Insectos'),
-('Miguel Soto', 'Mañana', 'Animales Nocturnos')´,
+('Miguel Soto', 'Mañana', 'Animales Nocturnos'),
 ('Cristina Cortez', 'Tarde', 'Animales Domesticos'),
 ('Fernando Rojos', 'Mañana', 'Animales Salvajes'),
 ('Laura Medina', 'Tarde', 'Animales Marinos');
@@ -42,32 +42,33 @@ INSERT INTO visitantes (nombre, rut) VALUES
 ('Santiago Fuentes', '65412387-3'),
 ('Valentina Rojas', '78912332-4');
 
+
 INSERT INTO cuidados_medicos (id_animal, fecha, tipo_cuidado, descripcion, veterinario, observaciones) VALUES
-(1, '15-10-2025', 'Revision Gneneral', 'Chequeo de rutina, peso y estado general', 'Dr. carlos Mendez', 'Animal en buen estado de salud'),
-(2, '16-10-2025', 'vacunacion', 'Aplicacion de vacuna antirrabica', 'Dra. Lucia Fernandez', 'Sin reacciones adversas'),
-(3, '17-10-2025', 'Tratamiento Dental', 'Limpieza denntal', 'Dr','Miguel Torres', 'Mejora en la salud bucal'),
-(4, '18-10-2025', 'Revision de Piel', 'Evaluacion de Lesiones cutaneas', 'Dra. Ana Ruiz', 'No se encontraron problemas'),
-(5, '19-10-2025', 'Cirugia Menor', 'Extraccion de tumot benigmo', 'Dr. Sofia Lopez', 'Recuperacion satisfactoria'),
-(1, '20-10-2025', 'Revision General', 'Chequeo de rutina', 'Dr. Carlos Mendez', 'Animal en buen estado de salud'),
-(2, '21-10-2025', 'Vacunacion', 'Aplicacion de vacuna contra la gripe felina', 'Dra. Lucia Fernandez', 'Sin reacciones adversas'),
-(3, '22-10-2025', 'Tratamiento Dental', 'Revision y Limpieza dental', 'Dr. Miguel Torres', 'Mejora en la salud bucal'),
-(4, '23-10-2025', 'Revision de piel', 'Evaliacion de Lesiones cutaneas', 'Dra. Ana Ruiz', 'No se encontraron problemas'),
-(5, '24-10-2025', 'cirugia menor', 'Extraccion de tumot benigno', 'Dr. sofia Lopez', 'Recuperacion satisfactoria');
+(1, '2025-10-15', 'Revision General', 'Chequeo de rutina, peso y estado general', 'Dr. Carlos Mendez', 'Animal en buen estado de salud'),
+(2, '2025-10-16', 'Vacunacion', 'Aplicacion de vacuna antirrabica', 'Dra. Lucia Fernandez', 'Sin reacciones adversas'),
+(3, '2025-10-17', 'Tratamiento Dental', 'Limpieza dental', 'Dr. Miguel Torres', 'Mejora en la salud bucal'),
+(4, '2025-10-18', 'Revision de Piel', 'Evaluacion de Lesiones cutaneas', 'Dra. Ana Ruiz', 'No se encontraron problemas'),
+(5, '2025-10-19', 'Cirugia Menor', 'Extraccion de tumor benigno', 'Dra. Sofia Lopez', 'Recuperacion satisfactoria'),
+(1, '2025-10-20', 'Revision General', 'Chequeo de rutina', 'Dr. Carlos Mendez', 'Animal en buen estado de salud'),
+(2, '2025-10-21', 'Vacunacion', 'Aplicacion de vacuna contra la gripe felina', 'Dra. Lucia Fernandez', 'Sin reacciones adversas'),
+(3, '2025-10-22', 'Tratamiento Dental', 'Revision y Limpieza dental', 'Dr. Miguel Torres', 'Mejora en la salud bucal'),
+(4, '2025-10-23', 'Revision de Piel', 'Evaluacion de Lesiones cutaneas', 'Dra. Ana Ruiz', 'No se encontraron problemas'),
+(5, '2025-10-24', 'Cirugia Menor', 'Extraccion de tumor benigno', 'Dra. Sofia Lopez', 'Recuperacion satisfactoria');
 
 
-INSERT INTO alimentacion (id_animal, tipo_comida, cantidad, horario)
-VALUES
-(1, 'Carne fresca', '3 kg', '2025-10-18 09:00:00'),
-(2, 'Heno y agua', '5 kg', '2025-10-18 08:30:00'),
-(3, 'Frutas variadas', '2 kg', '2025-10-18 10:00:00'),
-(4, 'Pescado', '1.5 kg', '2025-10-18 11:00:00'),
-(5, 'Granos y vegetales', '3.5 kg', '2025-10-18 12:00:00');
+INSERT INTO alimentacion (id_animal, tipo_comida, cantidad, horario) VALUES 
+(1, 'Carne fresca', 3, '2025-10-18 09:00:00'), 
+(2, 'Heno y agua', 5, '2025-10-18 08:30:00'), 
+(3, 'Frutas variadas', 2, '2025-10-18 10:00:00'), 
+(4, 'Pescado', 1.5, '2025-10-18 11:00:00'), 
+(5, 'Granos y vegetales', 3.5, '2025-10-18 12:00:00');
 
 INSERT INTO entrada (fecha_visita, precio, id_visitante)
 VALUES
-('18-10-2025', 5000, 1),
-('19-10-2025', 4500, 2),
-('20-10-2025', 6000, 3),
-('21-10-2025', 5500, 4),
-('22-10-2025', 7000, 5);
+('2025-10-18', 5000, 1),
+('2025-10-19', 4500, 2),
+('2025-10-20', 6000, 3),
+('2025-10-21', 5500, 4),
+('2025-10-22', 7000, 5);
+
 
