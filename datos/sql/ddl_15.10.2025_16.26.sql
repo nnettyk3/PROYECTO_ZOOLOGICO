@@ -2,16 +2,16 @@
 
 
 INSERT INTO animal (nombre, especie, habitat, edad) VALUES
-('Leo', 'León', 8, 'Sabana Africana'),
-('Mimi', 'Tigre de Bengala', 5, 'Selva Tropical'),
-('Toto', 'Elefante Africano', 12, 'Sabana'),
-('Luna', 'Pingüino Emperador', 4, 'Zona Polar'),
-('Roco', 'Gorila Occidental', 10, 'Bosque Húmedo'),
-('Coco', 'Cocodrilo del Nilo', 15, 'Pantano'),
-('Nala', 'Leona', 7, 'Sabana Africana'),
-('Paco', 'Guacamayo Azul', 3, 'Selva Tropical'),
-('Dumbo', 'Elefante Asiático', 9, 'Zona Asiática'),
-('Max', 'Oso Pardo', 6, 'Bosque Templado');
+('Leo', 'León', 'Sabana Africana', 8),
+('Mimi', 'Tigre de Bengala', 'Selva Tropical', 5),
+('Toto', 'Elefante Africano', 'Sabana', 12),
+('Luna', 'Pingüino Emperador', 'Zona Polar', 4),
+('Roco', 'Gorila Occidental', 'Bosque Húmedo', 10),
+('Coco', 'Cocodrilo del Nilo', 'Pantano', 15),
+('Nala', 'Leona', 'Sabana Africana', 7),
+('Paco', 'Guacamayo Azul', 'Selva Tropical', 3),
+('Dumbo', 'Elefante Asiático', 'Zona Asiática', 9),
+('Max', 'Oso Pardo', 'Bosque Templado', 6);
 
 INSERT INTO cuidadores (nombre, turno, especialidad) VALUES
 ('Juan Torres', 'Mañana', 'Mamiferos Grandes'),
