@@ -4,4 +4,4 @@ prettytable
 python-dateutil
 pandas
 requests
-pytests
+pytest
