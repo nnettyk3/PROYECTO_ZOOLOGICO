@@ -1,12 +1,11 @@
+from sqlalchemy import Column, Integer, Date, Float, ForeignKey
+from modelos.base import Base 
 
-# Módulo: modelos/entrada.py
+class Entrada(Base):
+    __tablename__ = 'entrada'
 
-class Entrada:
-    def __init__(self, id_entrada, tipo_entrada, precio, fecha_compra):
-        self.id_entrada = id_entrada
-        self.tipo_entrada = tipo_entrada # Ej: 'Adulto', 'Niño', 'Familiar'
-        self.precio = precio
-        self.fecha_compra = fecha_compra # Usaremos strings o datetime objects
+    id_entrada = Column(Integer, primary_key=True, autoincrement=True)
+    fecha_visita = Column(Date, nullable=False)
+    precio = Column(Float, nullable=False)
+    id_visitante = Column(Integer, ForeignKey('visitantes.id_visitante'))
 
-    def __str__(self):
-        return f"Entrada(ID: {self.id_entrada}, Tipo: {self.tipo_entrada}, Precio: {self.precio})"
