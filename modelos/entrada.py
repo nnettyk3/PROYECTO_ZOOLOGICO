@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, Date, Float, ForeignKey
+from sqlalchemy import Column, Integer, Date, Float, ForeignKey, Boolean
 from modelos.base import Base 
 
 class Entrada(Base):
@@ -8,4 +8,5 @@ class Entrada(Base):
     fecha_visita = Column(Date, nullable=False)
     precio = Column(Float, nullable=False)
     id_visitante = Column(Integer, ForeignKey('visitantes.id_visitante'))
+    habilitado = Column(Boolean, default=1, nullable=False) 
 

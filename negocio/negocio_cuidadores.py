@@ -1,12 +1,15 @@
 from prettytable import PrettyTable
-def registrar_cuidador(self):
-        print("\n--- Registro de Nuevo Cuidador ---")
-        nombre = input("Nombre del Cuidador: ")
-        turno = input("Turno (Mañana/Tarde): ") 
-        especialidad = input("Especialidad: ")
+from modelos.cuidadores import Cuidador
+from datos.insertar_datos import insertar_objeto
+
+def registrar_cuidador():
+    print("\n--- Registro de Nuevo Cuidador ---")
+    nombre = input("Nombre del Cuidador: ")
+    turno = input("Turno (Mañana/Tarde): ") 
+    especialidad = input("Especialidad: ")
+    nuevo_cuidador = Cuidador(nombre=nombre.title(), turno=turno.title(), especialidad=especialidad.title())
+    insertar_objeto(nuevo_cuidador)        
         
-        exito, mensaje = self.gestion.registrar_nuevo_cuidador(nombre, turno, especialidad)
-        self._mostrar_resultado(exito, mensaje)
 def mostrar_cuidadores(self):
     cuidadores = self.gestion.obtener_lista_cuidadores()
     if not cuidadores:

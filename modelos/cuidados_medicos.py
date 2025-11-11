@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, ForeignKey, Date, String, Text
+from sqlalchemy import Column, Integer, ForeignKey, Date, String, Text, Boolean
 from modelos.base import Base 
 
 class CuidadoMedico(Base):
@@ -11,3 +11,4 @@ class CuidadoMedico(Base):
     descripcion = Column(Text, nullable=False)
     veterinario = Column(String(100), nullable=False)
     observaciones = Column(Text)
+    habilitado = Column(Boolean, default=1, nullable=False) 

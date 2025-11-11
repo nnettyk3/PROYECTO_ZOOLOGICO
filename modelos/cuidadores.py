@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, Boolean
 from modelos.base import Base 
 
 class Cuidador(Base):
@@ -8,3 +8,4 @@ class Cuidador(Base):
     nombre = Column(String(100), nullable=False)
     turno = Column(String(50))
     especialidad = Column(String(100))
+    habilitado = Column(Boolean, default=1, nullable=False)

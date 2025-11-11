@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, Boolean
 from modelos.base import Base
 
 class Animal(Base):
@@ -8,4 +8,5 @@ class Animal(Base):
     nombre = Column(String(100), nullable=False)
     especie = Column(String(100), nullable=False)
     edad = Column(Integer)
-    habitat = Column(String(100))  
+    habitat = Column(String(100))
+    habilitado = Column(Boolean, default=1, nullable=False) 
