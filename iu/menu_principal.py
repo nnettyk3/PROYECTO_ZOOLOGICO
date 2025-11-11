@@ -1,4 +1,4 @@
-from negocio.negocio_animal import registrar_animal, listado_animales, asociar_cuidador_a_animal
+from negocio.negocio_animal import registrar_animal, mostrar_animales, asociar_cuidador_a_animal
 from negocio.negocio_cuidadores import registrar_cuidador, mostrar_cuidadores
 from negocio.negocio_visitantes import registrar_visitante, mostrar_visitantes
 from negocio.negocio_alimentacion import registrar_alimentacion
@@ -42,7 +42,7 @@ def menu_principal():
         elif opcion == '7':
             vender_entrada()
         elif opcion == '8':
-            listado_animales()
+            mostrar_animales()
         elif opcion == '9':
             mostrar_cuidadores()
         elif opcion == '10':

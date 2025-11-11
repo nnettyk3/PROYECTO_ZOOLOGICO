@@ -13,7 +13,7 @@ def registrar_animal():
     nuevo_aninmal = Animal(nombre=nombre.title(), especie=especie.title(), edad=int(edad), habitat=habitat.title())
     insertar_objeto(nuevo_aninmal)
 
-def listado_animales():
+def mostrar_animales():
     tabla_animales = PrettyTable()
     tabla_animales.field_names = ['id_animal', 'nombre', 'especie', 'edad', 'habitat']
     listado_animales = obtener_datos_objetos(Animal)
