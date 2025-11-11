@@ -1,5 +1,14 @@
+from negocio.negocio_animal import registrar_animal, mostrar_animales, asociar_cuidador_a_animal
+from negocio.negocio_cuidadores import registrar_cuidador, mostrar_cuidadores
+from negocio.negocio_visitantes import registrar_visitante, mostrar_visitantes
+from negocio.negocio_alimentacion import registrar_alimentacion
+from negocio.negocio_cuidados_medicos import registrar_cuidado_medico
+from negocio.negocio_entrada import vender_entrada
 
-def mostrar_menu(self):
+
+def menu_principal():
+    ejecutando = True
+    while ejecutando:   
         print("\n=== Sistema de Gestión Zoológico (CRUD) ===")
         print("--- REGISTROS (CREATE) ---")
         print("1. Registrar Animal")
@@ -14,38 +23,35 @@ def mostrar_menu(self):
         print("8. Mostrar Animales")
         print("9. Mostrar Cuidadores")
         print("10. Mostrar Visitantes")
-        print("11. Salir")
-        return input("Seleccione una opción: ")
-
-def iniciar(self):
-    while True:
-        try:
-            opcion = input(self.mostrar_menu()).strip()
-        except EOFError:
-            opcion = '11' # Permite salir en ambientes interactivos
+        print("11. Salir")   
+        
+        opcion = input("sellecione una opcion:")
             
         if opcion == '1':
-            self.registrar_animal()
+            registrar_animal()
         elif opcion == '2':
-            self.registrar_cuidador()
+            registrar_cuidador()
         elif opcion == '3':
-            self.registrar_visitante()
+            registrar_visitante()
         elif opcion == '4':
-            self.registrar_alimentacion()
+            registrar_alimentacion()
         elif opcion == '5':
-            self.registrar_cuidado_medico()
+            registrar_cuidado_medico()
         elif opcion == '6':
-            self.asociar_cuidador_a_animal()
+            asociar_cuidador_a_animal()
         elif opcion == '7':
-            self.vender_entrada()
+            vender_entrada()
         elif opcion == '8':
-            self.mostrar_animales()
+            mostrar_animales()
         elif opcion == '9':
-            self.mostrar_cuidadores()
+            mostrar_cuidadores()
         elif opcion == '10':
-            self.mostrar_visitantes()
+            mostrar_visitantes()
         elif opcion == '11':
             print("Saliendo del sistema. Adiós!")
-            break
+            ejecutando = False
         else:
             print("Opción no válida. Intente de nuevo.")
+
+if __name__ == "__main__":
+    menu_principal()
