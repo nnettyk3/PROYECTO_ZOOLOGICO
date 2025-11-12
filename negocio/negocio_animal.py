@@ -23,11 +23,10 @@ def mostrar_animales():
                 [animal.id_animal, animal.nombre, animal.especie, animal. edad, animal.habitat])
         print(tabla_animales)
 
-def asociar_cuidador_a_animal(self):
+def asociar_cuidador_animal():
         print("\n--- Asignación de Cuidador ---")
         # Es recomendable mostrar listas de IDs de Animales y Cuidadores aquí
         id_cuidador = input("Ingrese el ID del Cuidador a asignar: ")
         id_animal = input("Ingrese el ID del Animal: ")
         
-        exito, mensaje = self.gestion.asociar_cuidador_animal(id_cuidador, id_animal)
-        self._mostrar_resultado(exito, mensaje)
+  
